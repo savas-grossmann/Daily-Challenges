@@ -4,13 +4,13 @@
 
 
 def reverse(sentence):
-    reversed_sentence = ""
-    for word in sentence.split():
+    reversed_sentence = []
+    for word in sentence.split(" "):
         if len(word) >= 5:
-            reversed_sentence += word[::-1] + " "
+            reversed_sentence.append(word[::-1])
         else:
-            reversed_sentence += word + " "
-    print(reversed_sentence)
+            reversed_sentence.append(word)
+    print(" ".join(reversed_sentence))
 
 
 if __name__ == '__main__':
