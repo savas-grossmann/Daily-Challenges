@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 class containsDuplicate {
 
     /*
@@ -31,7 +34,7 @@ class containsDuplicate {
             i is already in the set.
          */
         for(int i: nums){
-            if(numbers.add(i) == false) return true;
+            if(!numbers.add(i)) return true;
         }
         return false;
     }
