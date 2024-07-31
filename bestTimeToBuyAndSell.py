@@ -17,7 +17,7 @@ def maxProfit_slow(self, prices: List[int]) -> int:
     return profit
 
 
-# The Problem is close to maximum SubArray. We go trough the Array and try
+# The Problem is close to maximum SubArray. We go through the Array and try
 # to find the biggest Subarray which will also give us the maximum profit
 def maxProfit_fast(self, prices: List[int]) -> int:
     profit, current = 0, 0
